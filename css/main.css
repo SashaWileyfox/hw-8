@@ -1,22 +1,5 @@
 @import url(reset.css);
 @import url(pictures.css);
-@font-face {
-    font-family: 'Rethink Sans';
-    src: url('RethinkSans-Regular.woff2') format('woff2'),
-        url('RethinkSans-Regular.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('Ubuntu-Light.woff2') format('woff2'),
-        url('Ubuntu-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Caveat';
@@ -27,11 +10,43 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('AmaticSC-Regular.woff2') format('woff2'),
+        url('AmaticSC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('Pacifico-Regular.woff2') format('woff2'),
+        url('Pacifico-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 html, body {
     scroll-behavior: smooth;
 }
 
+.ff-amatic {
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.ff-parcifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.ff-caveat {
+    font-family: 'Caveat', cursive;
+}
+
+.upper {
+    text-transform: uppercase;
+}
 
 main>div {
     background-image: url(../picture/background.jpg);
