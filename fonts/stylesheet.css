@@ -1,26 +1,23 @@
 @font-face {
     font-family: 'Caveat';
-    src: url('Caveat-Regular.woff2') format('woff2'),
-        url('Caveat-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('Caveat-Bold.woff2') format('woff2');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Amatic SC';
-    src: url('AmaticSC-Regular.woff2') format('woff2'),
-        url('AmaticSC-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Light.woff2') format('woff2');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Pacifico';
-    src: url('Pacifico-Regular.woff2') format('woff2'),
-        url('Pacifico-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Raleway';
+    src: url('Raleway-Light.woff2') format('woff2');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
