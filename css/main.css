@@ -112,7 +112,7 @@ header, footer {
     display: none;
     position: absolute;
     top: 100%;
-    left: 35%;
+    left: 0;
     font-family: 'Raleway';
 }
 
@@ -123,7 +123,7 @@ header, footer {
     display: block;
     text-align: center;
     padding: 10px 10px;
-    width: 143px;
+    width: 200px;
     color: gray;
     background-color: black;
 }
@@ -134,6 +134,9 @@ header, footer {
 }
 .layaut {
     position: relative;
+}
+.icon-arrow {
+    background: black url(../picture/icons/arrow-sm-left-svgrepo-com.svg) no-repeat 5px /30px;
 }
 
 .flex-link {
