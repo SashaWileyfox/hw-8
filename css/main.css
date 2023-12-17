@@ -79,23 +79,24 @@ header, footer {
 
 .menu-item {
     display: block;
-    text-align: left;
-    padding: 10px 100px;
+    
+    padding: 10px 10px;
     width: 200px;
     color: gray;
     background-color: black;
 }
 .icon-table {
-    background: url(../picture/icons/table.svg) no-repeat 40px /30px;
+    background: url(../picture/icons/table.svg) no-repeat 20px /30px;
 }
 .icon-cards {
-    background: url(../picture/icons/cards.svg) no-repeat 40px /30px;
+    background: url(../picture/icons/cards.svg) no-repeat 20px /30px;
 }
 .icon-gallery {
-    background: url(../picture/icons/gallery.svg) no-repeat 40px /30px;
+    background: url(../picture/icons/gallery.svg) no-repeat 20px /30px;
 }
-.icon-menu {
-    background: url(../picture/icons/menu.svg) no-repeat 40px /30px;
+.icon-arrow-d {
+    background: url(../picture/icons/arrow-narrow-down-svgrepo-com.svg) no-repeat right/30px;
+    
 }
 
 .menu-item:hover {
@@ -135,7 +136,7 @@ header, footer {
 .layaut {
     position: relative;
 }
-.icon-arrow {
+.icon-arrow-r {
     background: black url(../picture/icons/arrow-sm-left-svgrepo-com.svg) no-repeat 5px /30px;
 }
 
