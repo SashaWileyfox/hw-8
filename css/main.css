@@ -59,14 +59,6 @@ header, footer {
     text-align: center;
 }
 
-.footer-container {
-    width: 1200px;
-    font-size: small;
-    text-align: center;
-    margin: 0 auto;
-    color: gray;
-}
-
 .logo {
     color: gray;
     font-family: 'Caveat';
@@ -94,20 +86,16 @@ header, footer {
     background-color: black;
 }
 .icon-table {
-    background: url(../picture/icons/table.svg) no-repeat 30px /40px;
-    stroke-width: 20px;
+    background: url(../picture/icons/table.svg) no-repeat 40px /30px;
 }
 .icon-cards {
-    background: url(../picture/icons/cards.svg) no-repeat 30px /40px;
-    stroke-width: 20px;
+    background: url(../picture/icons/cards.svg) no-repeat 40px /30px;
 }
 .icon-gallery {
-    background: url(../picture/icons/gallery.svg) no-repeat 30px /40px;
-    stroke-width: 20px;
+    background: url(../picture/icons/gallery.svg) no-repeat 40px /30px;
 }
 .icon-menu {
-    background: url(../picture/icons/menu.svg) no-repeat 30px /30px;
-    stroke-width: 20px;
+    background: url(../picture/icons/menu.svg) no-repeat 40px /30px;
 }
 
 .menu-item:hover {
@@ -169,9 +157,52 @@ header, footer {
 }
 
 .login:hover {
-    background-color: gray;
+    background-color: #808080;
     color: aliceblue;
 }
+/* footer */
+
+.footer-container {
+    width: 1200px;
+    font-size: small;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: gray;
+}
+.footer-container > p{
+    padding: 10px 0;
+}
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px 0;
+}
+.contact-icons>li>a{
+   display: block; 
+   width: 15px;
+   height: 15px;
+}
+.icon-youtube {
+    background: url(../picture/icons/social-youtube-svgrepo-com.svg) no-repeat center/15px;
+}
+.icon-pinterest {
+    background: url(../picture/icons/social-pinterest-svgrepo-com.svg) no-repeat center/15px;
+}
+.icon-instagram {
+    background: url(../picture/icons/instagram-svgrepo-com.svg) no-repeat center/15px;
+}
+.icon-mail {
+    background: url(../picture/icons/mail-svgrepo-com.svg) no-repeat center/15px;
+}
+.icon-twitter {
+    background: url(../picture/icons/twitter-svgrepo-com.svg) no-repeat center/15px;
+}
+.icon-facebook {
+    background: url(../picture/icons/facebook-svgrepo-com.svg) no-repeat center/15px;
+}
+
 
 
 /* MAIN PAGE */
@@ -395,7 +426,7 @@ table {
 }
 
 .cont-table {
-    padding: 125px 0;
+    padding: 150px 0;
 }
 
 td {
