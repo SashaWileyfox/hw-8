@@ -46,7 +46,7 @@ body {
 header, footer {
     display: flex;
     align-items: center;
-    min-height: 60px;
+    padding: 15px 0;
     background-color: black;
 }
 
@@ -70,7 +70,6 @@ header, footer {
 }
 
 .menu {
-    width: 800px;
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -79,23 +78,26 @@ header, footer {
 
 .menu-item {
     display: block;
-    
-    padding: 10px 10px;
-    width: 200px;
+    padding: 10px 40px;
     color: gray;
     background-color: black;
 }
 .icon-table {
     background: url(../picture/icons/table.svg) no-repeat 20px /30px;
+    padding-left: 50px;
 }
 .icon-cards {
     background: url(../picture/icons/cards.svg) no-repeat 20px /30px;
+    padding-left: 50px;
+
 }
 .icon-gallery {
     background: url(../picture/icons/gallery.svg) no-repeat 20px /30px;
+    padding-left: 50px;
+
 }
 .icon-arrow-d {
-    background: url(../picture/icons/arrow-narrow-down-svgrepo-com.svg) no-repeat right/30px;
+    background: url(../picture/icons/arrow-narrow-down-svgrepo-com.svg) no-repeat 100%/30px;
     
 }
 
@@ -111,10 +113,12 @@ header, footer {
 
 .submenus-menu {
     display: none;
+    width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
     font-family: 'Raleway';
+    padding: 18px 0;
 }
 
 .submenu:hover .submenus-menu {
@@ -124,7 +128,6 @@ header, footer {
     display: block;
     text-align: center;
     padding: 10px 10px;
-    width: 200px;
     color: gray;
     background-color: black;
 }
@@ -137,11 +140,12 @@ header, footer {
     position: relative;
 }
 .icon-arrow-r {
-    background: black url(../picture/icons/arrow-sm-left-svgrepo-com.svg) no-repeat 5px /30px;
+    background: black url(../picture/icons/arrow-sm-left-svgrepo-com.svg) no-repeat 3px/20px;
 }
 
 .flex-link {
     display: none;
+    width: 100%;
     position: absolute;
     top: 0;
     right: 100%;
@@ -171,7 +175,6 @@ header, footer {
     font-size: small;
     text-align: center;
     margin: 0 auto;
-    padding: 10px 0;
     color: gray;
 }
 .footer-container > p{
