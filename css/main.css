@@ -34,7 +34,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -47,10 +47,108 @@ body {
 header, footer {
     display: flex;
     align-items: center;
-    /* padding: 15px 0; */
     background-color: black;
+    opacity: 0.5;
+    
+}
+footer{
+    /* opacity: 1; */
 }
 
+/* BARSIDE */
+
+.sidebar{
+    position: fixed;
+    top: 0;    
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    padding: 100px 0;
+    background: linear-gradient(to right, white, 80%, gray);
+    opacity: 0.5;
+    overflow: hidden;
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.sidebar:hover{
+    background: linear-gradient(to right, white, black);
+    opacity: 0.5;
+    width: 250px;
+    transition: all 0.4s linear;
+}
+.move-contant{
+    padding-left: 80px;
+}
+.sidebar:hover + .move-contant {
+    padding-left: 250px;
+    transition: all 0.4s linear;
+
+}
+.fixed-link{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: underline;  
+    font-size: 20px; 
+}
+.fixed-link:hover{
+    background-color: #808080;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+
+}
+.icon-border{
+    display: inline-block;
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 7px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.fixed-link:hover .icon-border{
+    transform: rotate(45deg);
+    animation: turn 0.2s linear, 1, forwards ;
+}
+@keyframes turn {
+    20%{
+        transform: rotate(100deg);
+    }
+    50%{
+        transform: rotate(200deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+.first-fix-link{
+    padding-top: 0;
+}
+.sidebar-icon{
+    width: 30px;
+    height: 30px;
+    fill: transparent;
+    stroke: rgb(79, 76, 76);  
+    
+}
+.fixed-link:hover .sidebar-icon{
+    transform:  scale(1.4) rotate(-45deg);
+}
+.rout{
+    stroke: none;
+    fill: rgb(79, 76, 76);
+}
+.plane{
+    stroke: none;
+    fill: rgb(79, 76, 76);
+}
+
+/* HEADER */
 .header-container {
     width: 1230px;
     display: flex;
@@ -82,7 +180,6 @@ header, footer {
     display: block;
     padding: 20px 25px;
     color: gray;
-    background-color: black;
 }
 
 .header-link {
@@ -107,7 +204,18 @@ header, footer {
     stroke: white;
 }
 
-/* іконки чеез бекграунд
+.menu-item:hover .menu-icon-table {
+    fill: gray;
+    transition: all 0.6s ease;}
+    
+.menu-item:hover {
+    background-color: gray;
+    color: aliceblue;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+}
+
+/* іконки через бекграунд
 .icon-cards {
     background: url(../picture/icons/cards.svg) no-repeat 20px /30px;
     padding-left: 50px;
@@ -123,13 +231,6 @@ header, footer {
 .icon-arrow-d {
     background: url(../picture/icons/arrow-narrow-down-svgrepo-com.svg) no-repeat 100%/30px;
 }  */
-
-.menu-item:hover {
-    background-color: gray;
-    color: aliceblue;
-    border-radius: 5px;
-    transition: all 0.6s ease;
-}
 
 .submenu {
     position: relative;
@@ -165,13 +266,11 @@ header, footer {
     color: aliceblue;
     border-radius: 5px;
     transition: all 0.4s ease;
-
 }
 
 .layaut {
     position: relative;
 }
-
 
 .flex-link {
     width: 70%;
@@ -187,7 +286,6 @@ header, footer {
     border-radius: 5px;
 }
 
-
 .layaut:hover .flex-link {
     right: 100%;
     background-color: black;
@@ -198,7 +296,7 @@ header, footer {
     padding: 12px 35px;
     color: white;
     font-size: 20px;
-    background-color: rgb(20, 20, 139);
+    background-color: rgb(5, 5, 255);
     border-radius: 10px;
 }
 
